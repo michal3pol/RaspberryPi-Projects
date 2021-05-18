@@ -7,10 +7,10 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.cleanup()
 
-instance = dht11.DHT11(pin = 4)
+device = dht11.DHT11(pin = 4)
 
 while True:
-    result = instance.read()
+    result = device.read()
     if result.is_valid():
         print("Temperature: %-3.1f C" % result.temperature)
         print("Humidity: %-3.1f %%" % result.humidity)
