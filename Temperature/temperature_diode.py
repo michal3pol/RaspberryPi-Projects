@@ -23,7 +23,7 @@ try:
             time.sleep(0.2)
             GPIO.output(12, GPIO.LOW)
             time.sleep(4.8)
-        if(temperatura >26):
+        else:
             print(temperatura)
             for i in range(1,6):
                 GPIO.output(12, GPIO.HIGH)
