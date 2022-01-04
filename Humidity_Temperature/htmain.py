@@ -19,10 +19,6 @@ try:
             humidity = str(result.humidity)
             lcd.text("Temp: " + temperature + " C", 1);
             lcd.text("Humidity: " + humidity + " %", 2);
-            print("Temperature: %-3.1f C" % result.temperature)
-            print("Humidity: %-3.1f %%" % result.humidity)
-        else:
-            print("Error: %d" % result.error_code)
         time.sleep(10)
 
 except KeyboardInterrupt:
